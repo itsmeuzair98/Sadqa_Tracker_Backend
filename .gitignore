@@ -1,0 +1,6 @@
+venv/
+logs/
+*.log
+__pycache__/
+*.pyc
+.sadqa-tracker-env
