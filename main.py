@@ -54,7 +54,7 @@ async def root():
         "message": f"Welcome to {settings.APP_NAME}",
         "version": settings.VERSION,
         "environment": "production" if os.getenv("RENDER") else "development",
-        "docs": "/docs" if settings.DEBUG else "Documentation disabled in production"
+        "docs": "/docs" if settings.APPDEBUG else "Documentation disabled in production"
     }
 
 @app.get("/health")
